@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-11-17T02:22:26.352413+00:00",
+  "logistic_regression": {
+    "candidate": "C_10.0",
+    "fit_seconds": 0.008816199999273522,
+    "test": {
+      "confusion_matrix": [
+        [
+          1980,
+          198
+        ],
+        [
+          188,
+          152
+        ]
+      ],
+      "f1": 0.4405797101449275,
+      "false_positive_rate": 0.09090909090909091,
+      "positive_predictions": 350,
+      "pr_auc": 0.43690612669200485,
+      "precision": 0.4342857142857143,
+      "recall": 0.4470588235294118,
+      "roc_auc": 0.7160063198833253,
+      "threshold": 0.6
+    },
+    "threshold": 0.6,
+    "validation": {
+      "confusion_matrix": [
+        [
+          1969,
+          209
+        ],
+        [
+          183,
+          157
+        ]
+      ],
+      "f1": 0.4447592067988669,
+      "false_positive_rate": 0.09595959595959595,
+      "positive_predictions": 366,
+      "pr_auc": 0.43467592336988115,
+      "precision": 0.42896174863387976,
+      "recall": 0.46176470588235297,
+      "roc_auc": 0.732003186949711,
+      "threshold": 0.6
+    }
+  },
+  "majority_class_baseline": {
+    "status": "evaluated",
+    "test": {
+      "confusion_matrix": [
+        [
+          2178,
+          0
+        ],
+        [
+          340,
+          0
+        ]
+      ],
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "positive_predictions": 0,
+      "pr_auc": 0.13502779984114377,
+      "precision": 0.0,
+      "recall": 0.0,
+      "roc_auc": 0.5,
+      "threshold": 0.5
+    },
+    "validation": {
+      "confusion_matrix": [
+        [
+          2178,
+          0
+        ],
+        [
+          340,
+          0
+        ]
+      ],
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "positive_predictions": 0,
+      "pr_auc": 0.13502779984114377,
+      "precision": 0.0,
+      "recall": 0.0,
+      "roc_auc": 0.5,
+      "threshold": 0.5
+    }
+  },
+  "random_forest": {
+    "candidate": "depth_None_leaf_1",
+    "fit_seconds": 0.8568096999988484,
+    "test": {
+      "confusion_matrix": [
+        [
+          1966,
+          212
+        ],
+        [
+          166,
+          174
+        ]
+      ],
+      "f1": 0.4793388429752066,
+      "false_positive_rate": 0.09733700642791551,
+      "positive_predictions": 386,
+      "pr_auc": 0.5330278569237061,
+      "precision": 0.45077720207253885,
+      "recall": 0.5117647058823529,
+      "roc_auc": 0.7884013936152974,
+      "threshold": 0.25
+    },
+    "threshold": 0.25,
+    "validation": {
+      "confusion_matrix": [
+        [
+          1990,
+          188
+        ],
+        [
+          165,
+          175
+        ]
+      ],
+      "f1": 0.49786628733997157,
+      "false_positive_rate": 0.08631772268135904,
+      "positive_predictions": 363,
+      "pr_auc": 0.5294538443711525,
+      "precision": 0.4820936639118457,
+      "recall": 0.5147058823529411,
+      "roc_auc": 0.7918152109328578,
+      "threshold": 0.25
+    }
+  },
+  "selected_model": "random_forest",
+  "xgboost": {
+    "reason": "xgboost is not installed in the selected CPU environment",
+    "status": "unavailable"
+  }
+}

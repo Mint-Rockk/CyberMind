@@ -1,0 +1,46 @@
+# Virtual environments & Python cache
+**/.venv/
+.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Frontend dependencies & build artifacts
+**/node_modules/
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment files & secrets (DO NOT COMMIT)
+.env
+.env.*
+!.env.example
+
+# Logs and OS files
+*.log
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Datasets and large data directories (>100MB)
+data/raw/
+data/processed/
+backend/data/CTI-EACL24/
+backend/data/correlation/processed/
+backend/data/correlation/weak_supervision/
+
+# Ignore all joblib model artifacts by default except the active production model
+*.joblib
+!backend/data/correlation/experiments/f1_improvement_v3/models/random_forest.joblib
+artifacts/correlation/*.joblib

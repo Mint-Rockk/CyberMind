@@ -1,0 +1,15 @@
+{
+  "campaign_grouping_available": false,
+  "cpu_only": true,
+  "dataset": "correlation-dataset-v3",
+  "dataset_sha256": "72ac59730e14eaa8307434b3f81c2aff19e963eaa15458e7696695e1d69e7749",
+  "experiment_version": "advanced-model-optimization-v2",
+  "feature_schema_version": "correlation-features-v1",
+  "random_seed": 20261117,
+  "selection_rule": "validation F1, then PR-AUC, then precision",
+  "split_sha256": "c9fd1c072be8071a8f854af9161fbf272140e6150737570ca5e4c3607da26003",
+  "split_source": "data\\correlation\\experiments\\exploratory_pair_v1\\split_assignments.csv",
+  "test_rows": 2518,
+  "training_rows": 14267,
+  "xgboost_available": false
+}

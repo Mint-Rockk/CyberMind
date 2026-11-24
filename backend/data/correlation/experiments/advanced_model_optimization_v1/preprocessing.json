@@ -1,0 +1,15 @@
+{
+  "class_imbalance": "balanced class weights or positive sample weight",
+  "feature_columns": [
+    "temporal_similarity",
+    "entity_relationship_similarity",
+    "behavioural_similarity",
+    "attack_technique_similarity",
+    "semantic_embedding_similarity",
+    "knowledge_graph_relationship_similarity"
+  ],
+  "feature_schema_version": "correlation-features-v1",
+  "feature_variant": "all_features",
+  "missing_indicator_source": "neutral 0.5 for temporal, behavioural, and ATT&CK features per v3 metadata",
+  "test_threshold": 0.5
+}

@@ -1,0 +1,28 @@
+{
+  "campaign_grouping_available": false,
+  "cpu_only": true,
+  "dataset_path": "data\\correlation\\processed\\v3\\silver_correlation_pairs.csv",
+  "dataset_sha256": "72ac59730e14eaa8307434b3f81c2aff19e963eaa15458e7696695e1d69e7749",
+  "experiment_version": "exploratory-pair-v1",
+  "feature_columns": [
+    "temporal_similarity",
+    "entity_relationship_similarity",
+    "behavioural_similarity",
+    "attack_technique_similarity",
+    "semantic_embedding_similarity",
+    "knowledge_graph_relationship_similarity"
+  ],
+  "feature_schema_version": "correlation-features-v1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "random_seed": 20261117,
+  "source_feature_columns": [
+    "temporal_similarity",
+    "entity_relationship_similarity",
+    "behavioural_similarity",
+    "attack_technique_similarity",
+    "semantic_similarity",
+    "knowledge_graph_similarity"
+  ],
+  "split_strategy": "stratified_pair_level_70_15_15"
+}

@@ -1,0 +1,15 @@
+{
+  "feature_columns": [
+    "temporal_similarity",
+    "entity_relationship_similarity",
+    "behavioural_similarity",
+    "attack_technique_similarity",
+    "semantic_embedding_similarity",
+    "knowledge_graph_relationship_similarity"
+  ],
+  "logistic_regression": "StandardScaler fit on training rows only",
+  "missing_value_policy": "v3 materialized neutral 0.5; availability retained in v3 metadata",
+  "random_forest": "No feature transformation",
+  "xgboost": "No feature transformation",
+  "zero_imputation": false
+}

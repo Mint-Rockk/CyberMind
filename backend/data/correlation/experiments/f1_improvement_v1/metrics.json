@@ -1,0 +1,285 @@
+{
+  "dataset_sha256": "e1ee2c15ebec9b55dd33fc87b07ea683ddab39bdd21b65c398d4d9ef8168b24a",
+  "dataset_validation": {
+    "duplicate_or_reverse_duplicate_count": 0,
+    "feature_columns": [
+      "temporal_similarity",
+      "entity_relationship_similarity",
+      "behavioural_similarity",
+      "attack_technique_similarity",
+      "semantic_embedding_similarity",
+      "knowledge_graph_relationship_similarity"
+    ],
+    "feature_schema_version": "correlation-features-v1",
+    "invalid_feature_value_count": 0,
+    "label_counts": {
+      "negative": 14519,
+      "positive": 2266
+    },
+    "row_count": 16785,
+    "source_sha256": "e1ee2c15ebec9b55dd33fc87b07ea683ddab39bdd21b65c398d4d9ef8168b24a"
+  },
+  "elapsed_seconds": 22.75126189999719,
+  "feature_columns": [
+    "temporal_similarity",
+    "entity_relationship_similarity",
+    "behavioural_similarity",
+    "attack_technique_similarity",
+    "semantic_similarity",
+    "knowledge_graph_similarity",
+    "explicit_campaign_match",
+    "distinctive_indicator_support",
+    "shared_actor_only",
+    "shared_malware_only",
+    "shared_technique_only",
+    "hard_negative_flag",
+    "cross_vendor",
+    "label_confidence"
+  ],
+  "generated_at": "2026-11-17T03:06:31.811159+00:00",
+  "hard_negative_count": 7776,
+  "label_confidence_counts": {
+    "high": 16785
+  },
+  "model_results": [
+    {
+      "configuration": "C_0.1",
+      "family": "logistic_regression",
+      "fit_seconds": 0.20927099999971688,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            0,
+            340
+          ]
+        ],
+        "f1": 1.0,
+        "false_positive_rate": 0.0,
+        "pr_auc": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0,
+        "threshold": 0.1
+      }
+    },
+    {
+      "configuration": "C_1.0",
+      "family": "logistic_regression",
+      "fit_seconds": 0.1577108000019507,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            0,
+            340
+          ]
+        ],
+        "f1": 1.0,
+        "false_positive_rate": 0.0,
+        "pr_auc": 0.9999999999999999,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0,
+        "threshold": 0.1
+      }
+    },
+    {
+      "configuration": "C_10.0",
+      "family": "logistic_regression",
+      "fit_seconds": 0.16186279999965336,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            0,
+            340
+          ]
+        ],
+        "f1": 1.0,
+        "false_positive_rate": 0.0,
+        "pr_auc": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0,
+        "threshold": 0.1
+      }
+    },
+    {
+      "configuration": "depth_None_leaf_1",
+      "family": "random_forest",
+      "fit_seconds": 1.5140480999980355,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            0,
+            340
+          ]
+        ],
+        "f1": 1.0,
+        "false_positive_rate": 0.0,
+        "pr_auc": 1.0000000000000002,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0,
+        "threshold": 0.15
+      }
+    },
+    {
+      "configuration": "depth_None_leaf_3",
+      "family": "random_forest",
+      "fit_seconds": 1.5137594000007084,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            1,
+            339
+          ]
+        ],
+        "f1": 0.9985272459499264,
+        "false_positive_rate": 0.0,
+        "pr_auc": 0.9999828001375988,
+        "precision": 1.0,
+        "recall": 0.9970588235294118,
+        "roc_auc": 0.9999972991951601,
+        "threshold": 0.2
+      }
+    },
+    {
+      "configuration": "depth_12_leaf_1",
+      "family": "random_forest",
+      "fit_seconds": 1.5678005999980087,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            0,
+            340
+          ]
+        ],
+        "f1": 1.0,
+        "false_positive_rate": 0.0,
+        "pr_auc": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0,
+        "threshold": 0.2
+      }
+    },
+    {
+      "configuration": "depth_None_leaf_2",
+      "family": "extra_trees",
+      "fit_seconds": 0.8376022999982524,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            0,
+            340
+          ]
+        ],
+        "f1": 1.0,
+        "false_positive_rate": 0.0,
+        "pr_auc": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0,
+        "threshold": 0.3
+      }
+    },
+    {
+      "configuration": "lr_0.05_leaves_31",
+      "family": "hist_gradient_boosting",
+      "fit_seconds": 0.752914900000178,
+      "validation": {
+        "confusion_matrix": [
+          [
+            2178,
+            0
+          ],
+          [
+            2,
+            338
+          ]
+        ],
+        "f1": 0.9970501474926253,
+        "false_positive_rate": 0.0,
+        "pr_auc": 0.9974216646831205,
+        "precision": 1.0,
+        "recall": 0.9941176470588236,
+        "roc_auc": 0.9982984929508993,
+        "threshold": 0.35
+      }
+    }
+  ],
+  "original_six_feature_schema": "correlation-features-v1",
+  "pu_learning": {
+    "attempted": false,
+    "reason": "All 16,785 existing rows receive deterministic high-confidence positive/negative votes; no genuinely unlabeled subset is available."
+  },
+  "selected": {
+    "configuration": "depth_None_leaf_1",
+    "family": "random_forest",
+    "feature_importance": {
+      "attack_technique_similarity": 0.008045601836745776,
+      "behavioural_similarity": 0.005313869090142534,
+      "cross_vendor": 0.008641160528660428,
+      "distinctive_indicator_support": 0.005076627308282232,
+      "entity_relationship_similarity": 0.02338714374531331,
+      "explicit_campaign_match": 0.6248222594594816,
+      "hard_negative_flag": 0.15314505852403226,
+      "knowledge_graph_similarity": 0.020332192388750912,
+      "label_confidence": 0.0,
+      "semantic_similarity": 0.03376393155690776,
+      "shared_actor_only": 0.0020177551342272014,
+      "shared_malware_only": 0.11159617131143267,
+      "shared_technique_only": 2.4114619317261564e-05,
+      "temporal_similarity": 0.003834114496706148
+    },
+    "test": {
+      "confusion_matrix": [
+        [
+          2178,
+          0
+        ],
+        [
+          0,
+          340
+        ]
+      ],
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "pr_auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "roc_auc": 1.0,
+      "threshold": 0.15
+    },
+    "threshold": 0.15
+  },
+  "split_sha256": "c9fd1c072be8071a8f854af9161fbf272140e6150737570ca5e4c3607da26003",
+  "xgboost_available": false
+}

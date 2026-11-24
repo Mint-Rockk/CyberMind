@@ -1,0 +1,16 @@
+{
+  "campaign_grouping_available": false,
+  "cpu_only": true,
+  "experiment_version": "v4-training-comparison-v1",
+  "feature_schema_version": "correlation-features-v1",
+  "pair_labels_match": true,
+  "random_seed": 20261117,
+  "split_sha256": "c9fd1c072be8071a8f854af9161fbf272140e6150737570ca5e4c3607da26003",
+  "split_strategy": "reused_v3_pair_id_assignments",
+  "v3_rows": 16785,
+  "v3_schema": "correlation-features-v1",
+  "v3_sha256": "72ac59730e14eaa8307434b3f81c2aff19e963eaa15458e7696695e1d69e7749",
+  "v4_rows": 16785,
+  "v4_schema": "correlation-features-v1",
+  "v4_sha256": "e1ee2c15ebec9b55dd33fc87b07ea683ddab39bdd21b65c398d4d9ef8168b24a"
+}

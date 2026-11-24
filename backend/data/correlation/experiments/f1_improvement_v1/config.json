@@ -1,0 +1,20 @@
+{
+  "experiment_version": "f1-improvement-v1",
+  "random_seed": 20261117,
+  "cpu_only": true,
+  "base_dataset": "correlation-dataset-v4-feature-improvement",
+  "feature_schema_version": "correlation-features-v1",
+  "evidence_features": [
+    "explicit_campaign_match",
+    "distinctive_indicator_support",
+    "shared_actor_only",
+    "shared_malware_only",
+    "shared_technique_only",
+    "hard_negative_flag",
+    "cross_vendor",
+    "label_confidence"
+  ],
+  "hard_negative_weight": 1.5,
+  "selection_rule": "validation F1, then PR-AUC, then precision",
+  "test_used_for_selection": false
+}
